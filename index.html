@@ -1,18 +1,24 @@
-<!DOCTYPE html>
+<!-- Se inicia con una estructure base de html -->
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Cambiamos el nombre de la pestaña -->
   <title>My Portfolio</title>
 </head>
 <body>
+  <!-- Nombramos con un h1 la página  -->
   <h1>Santiago Botero - Riwi developer</h1>
+  <!-- Acá hacemos una barra de navegación para las diferentes secciones de la página -->
   <nav>
     <a href="#about_me" style="text-decoration: none;">About me</a>
     <a href="#projects" style="text-decoration: none;">My Projects</a>
     <a href="#contact" style="text-decoration: none;">Contact me</a>
 
   </nav>
+  <!-- Creamos la primera sección con titulo, una breve descripción y foto que está almacenada junto a otras en un directorio llamado assets -->
+   <!-- También se agrega la parte de conocimientos, donde se ponen las tecnologías conocidas identificadas con su propia imagen -->
   <section id="about_me">
     <h2>About me</h2>
       <p>Hello, I'm Santiago</p>
@@ -30,6 +36,7 @@
       <img src="./assets/git-github-logo.jpg" alt="Logo_git" width="200px">
     </ul>
   </section>
+  <!-- Acá se pone la sección de proyectos, donde se van anexando con su nombre, breve descripción y una imagen dentro de un link que redirecciona al github del mismo -->
   <section id="projects">
     <h2>Projects</h2>
 
@@ -47,6 +54,8 @@
 
   </section><br><br>
 
+  <!-- En esta sección, creamos una tabla con la etiqueta border para que se noten las líneas
+  Dentro del mismo se ponen los nombres de los proyectos, las tecnologías usadas y el link al respectivo proyecto -->
   <section>
     <table border="">
         <tr>
@@ -75,6 +84,8 @@
     </table>
   </section>
 
+  <!-- En esta sección, creamos un formulario con un apartado para nombre, email y mensaje
+  Luego está el botón para enviar la información -->
   <section id="contact">
     <h2>Contact form</h1>
     <form action="/my-handling-form-page" method="post">
@@ -90,6 +101,7 @@
     </form>
   </section>
 
+  <!-- En la última sección está la parte de las redes sociales con un link al github por el momento -->
   <section>
     <h2>Social media</h2>
     <a href="https://github.com/santiagobot321" target="_blank"><img src="./assets/github-logo-vector.png" alt="" width="80px"></a>
