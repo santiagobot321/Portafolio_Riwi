@@ -7,7 +7,13 @@
 </head>
 <body>
   <h1>Santiago Botero - Riwi developer</h1>
-  <section>
+  <nav>
+    <a href="#about_me" style="text-decoration: none;">About me</a>
+    <a href="#projects" style="text-decoration: none;">My Projects</a>
+    <a href="#contact" style="text-decoration: none;">Contact me</a>
+
+  </nav>
+  <section id="about_me">
     <h2>About me</h2>
       <p>Hello, I'm Santiago</p>
       <p>I'm Riwi developer student and teleinformatics networks at SENA</p>
@@ -21,7 +27,73 @@
       <img src="./assets/WhatsApp Image 2025-05-22 at 9.26.51 PM.jpeg" alt="Logo_Css" width="230px">
       <img src="./assets/WhatsApp Image 2025-05-22 at 9.29.20 PM.jpeg" alt="Logo_GNU" width="110px">
       <img src="./assets/WhatsApp Image 2025-05-22 at 10.20.07 PM.jpeg" alt="Logo_network" width="140px">
+      <img src="./assets/git-github-logo.jpg" alt="Logo_git" width="200px">
     </ul>
   </section>
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <h3>Project 1: Session analyzer</h3>
+    <p>This project use bash scripting to analize logs stored in a file.txt</p>
+    <a href="https://github.com/santiagobot321/sessionAnalyzer.git" target="_blank" rel="noopener noreferrer"><img src="./assets/hacker-logo-design-a-mysterious-and-dangerous-hacker-illustration-vector.jpg" alt="Github_logo" width="100px"></a>
+
+    <h3>Project 2: Web page using HTML and CSS</h3>
+    <p>Page about WW2 using HTML and CSS</p>
+    <a href="https://github.com/santiagobot321/VlogSGM.git" target="_blank" rel="noopener noreferrer"><img src="./assets/that-two-thousand-yard-stare_-thomas-c.-lea-iii-1944-u.s.-army-public-domain-via-wikimedia-commons.jpg" alt="Github_logo" width="100px"></a>
+    
+    <h3>Project 2: Program in python</h3>
+    <p>Planet store only using python</p>
+    <a href="https://github.com/santiagobot321/final_project" target="_blank" rel="noopener noreferrer"><img src="./assets/hitchhikers-guide-to-the-galaxy-share.webp" alt="Github_logo" width="100px"></a>
+
+  </section><br><br>
+
+  <section>
+    <table border="">
+        <tr>
+            <th>Name</th>
+            <th>Technology</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>sessionAnalyzer</td>
+            <td>Bash</td>
+            <td><a href="https://github.com/santiagobot321/sessionAnalyzer.git">Github link</a></td>
+            
+        </tr>
+        <tr>
+            <td>VlogSGM</td>
+            <td>HTML, CSS</td>
+            <td><a href="https://github.com/santiagobot321/VlogSGM.git">Github link</a></td>
+            
+        </tr>
+
+        <tr>
+            <td>Planet Store</td>
+            <td>Python</td>
+            <td><a href="https://github.com/santiagobot321/final_project">Github link</a></td>
+        </tr>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact form</h1>
+    <form action="/my-handling-form-page" method="post">
+        <label for="name"><h4>Name: </h4></label>
+        <input type="text" id="name" name="user_name" placeholder="Type your name" />
+            
+        <label for="mail"><h4>E-mail: </h4></label>
+        <input type="email" id="mail" name="user_mail" placeholder="Type your e-mail"/>
+            
+        <label for="msg"><h4>Message: </h4></label>
+        <textarea id="msg" name="user_message" placeholder="Write your message"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Social media</h2>
+    <a href="https://github.com/santiagobot321" target="_blank"><img src="./assets/github-logo-vector.png" alt="" width="80px"></a>
+  </section>
+
 </body>
 </html>
