@@ -1,0 +1,28 @@
+body {
+    background-color:#95aa61;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    background-color:#121310;
+    padding: 25px;
+    
+}
+
+nav a{
+    color: #f6f8ee;
+    padding-inline: 10px;
+    
+}
+
+#about_me{
+    text-align: center;
+}
+
+#about_me ul img{
+    margin: 30px;
+}
