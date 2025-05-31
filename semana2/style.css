@@ -1,4 +1,5 @@
-body{
+/*Aplicamos los estilos base para el body*/
+body {
     background-color: #000000;
     font-family: 'Courier New', Courier, monospace;
     color: #05e005;
@@ -7,30 +8,131 @@ body{
     text-align: justify;
 }
 
-#navigation nav a{
-    text-decoration: none;
-    color: #05e005 ;
+.nav-box {
+    padding: 15px;
+    border: 2px solid #05e005;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
 }
 
-.nav-box{
-  padding: 15px;
-  border: 2px solid #05e005;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 90px;
-}
-
-.unix{
+.unix {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 90px;
 }
 
-.unix img{
+.unix img {
     border-radius: 15px;
+    margin-left: 50px;
 }
 
+.something{
+
+}
+
+/* Efecto de hover en los enlaces de navegación */
+nav a {
+    text-decoration: none;
+    color: #05e005;
+    font-weight: bold;
+    margin-right: 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #0077cc;
+    transform: scale(1.1); /* Escala al pasar el mouse */
+}
+
+/* Pseudoelemento decorativo ::before en títulos */
+h1::before {
+    content: "✦ ";
+    color: #0077cc;
+    font-size: 1.2em;
+}
+
+/* Animación suave para el logo de Linux */
+.icono img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.icono img:hover {
+    transform: rotate(360deg); /* Gira al pasar el mouse */
+}
+
+/* Mueve la imagen de kernel suavemente */
+.unix img {
+    transition: transform 0.3s ease;
+}
+
+.unix img:hover {
+    transform: translateY(-10px); /* Se eleva un poco */
+}
+
+/* Añade una animación continua en un pseudoelemento decorativo */
+.unix h1::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+.something {
+    background-color: #111111;
+    border: 2px dashed #05e005;
+    padding: 25px;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(5, 224, 5, 0.2);
+}
+
+.something h2 {
+    color: #05e005;
+    margin-bottom: 15px;
+}
+
+.something ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.something li {
+    margin: 8px 0;
+}
+
+.something a {
+    color: #00ffaa;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.something a:hover {
+    color: #0077cc;
+    transform: scale(1.05);
+}
+
+.footer {
+    border-top: 2px solid #05e005;
+    padding: 20px;
+    margin-top: 90px;
+    text-align: center;
+    color: #05e005;
+    font-size: 0.9em;
+    background-color: #000000;
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
 

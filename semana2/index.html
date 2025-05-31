@@ -7,43 +7,62 @@
     <title>Linux</title>
 </head>
 <body>
-    <header id="navigation" class="nav-box">
-        <a href="#Home" class="icono"><img src="./assets/tux-drawing-1.jpg" alt="linux-icono" width="35px"></a>
-        <nav>
-            <a href="#Home">Home | </a>
-            <a href="#GNU">Unix | </a>
-            <a href="#Something else">Something else</a>
-        </nav>
-    </header>
 
-    <section class="home">
-        <h1>Kernel</h1>
-        <p>A kernel is the essential foundation of a computer's operating system (OS). It's the core that provides basic services for all other parts of the OS. It's the main layer between the OS and underlying computer hardware, and it helps with tasks such as process and memory management, inter-process communication, file system management, device control and networking.</p>
-            <h3>Types of Kernels 
-            There are five types of kernels:</h3>
+    <header class="nav-box">
+        <a href="#home" class="icono">
+            <img src="./assets/tux-drawing-1.jpg" alt="Ícono de Linux" width="35px">
+        </a>
+        <nav>
+            <a href="#home">Inicio | </a>
+            <a href="#gnu">Unix | </a>
+            <a href="#something-else">Algo más</a>
+        </nav>
+</header>
+
+    <main>
+        <section id="home" class="home">
+            <h1>Kernel</h1>
+
+            <p>Un kernel es la base esencial del sistema operativo de un computador. Es el núcleo que provee servicios básicos para todas las demás partes del sistema. Sirve de puente entre el sistema operativo y el hardware físico. Además, gestiona tareas como la administración de procesos, memoria, comunicación entre procesos, sistema de archivos, control de dispositivos y redes.</p>
+
+            <h3>Types of Kernels</h3>
+            <p>There are five types of kernels:</p>
             <ul>
-                <li>A Microkernel, which only contains basic functionality</li>
-                <li>A Monolithic Kernel, which contains many device drivers</li>
+                <li>Microkernel: contiene solo funcionalidades básicas</li>
+                <li>Monolithic Kernel: incluye muchos controladores de dispositivos</li>
                 <li>Hybrid Kernel</li>
                 <li>Exokernel</li>
                 <li>Nanokernel</li>
             </ul>
-    </section>
+        </section>
 
-    <section class="unix">
-        <div>
-            <h1>UNIX Kernel</h1>
-            <p>All Unix kernels are reentrant. This means that several processes may be executing in Kernel Mode at the same time. <br> 
-                Of course, on uniprocessor systems, only one process can progress, but many can be blocked in Kernel Mode <br>when waiting for the CPU or the completion of some I/O operation. <br> 
-                For instance, after issuing a read to a disk <br>on behalf of some process, the kernel lets the disk controller handle it, and resumes executing other processes. <br> 
-                An interrupt notifies the kernel when the device has satisfied the read, so the former process can resume the execution.</p>
-        </div>
-        <img src="./assets/Working-of-kernel-1024x419.webp" alt="" width="600px" height="400px">
-    </section>
+        <section id="unix" class="unix">
+            <div>
+                <h1>UNIX Kernel</h1>
+                <p>Todos los kernels Unix son reentrantes. Esto significa que varios procesos pueden ejecutarse en modo kernel al mismo tiempo. <br>
+                En sistemas con un solo procesador, solo un proceso puede avanzar, pero varios pueden quedar bloqueados en modo kernel mientras esperan al CPU o la finalización de una operación de E/S. <br>
+                Por ejemplo, tras emitir una lectura a un disco para un proceso, el kernel permite que el controlador del disco lo maneje y continúa ejecutando otros procesos. <br>
+                Una interrupción notifica al kernel cuando el dispositivo completa la lectura, y entonces el proceso anterior puede reanudar la ejecución.</p>
+            </div>
+            <img src="./assets/Working-of-kernel-1024x419.webp" alt="Diagrama del funcionamiento de un kernel" width="600px" height="200px">
+        </section>
 
-    <section>
-        
-    </section>
+        <section id="something-else" class="something">
+          <h2>✦ Recursos para aprender más</h2>
+          <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Aprender HTML – MDN</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Aprender CSS – MDN</a></li>
+            <li><a href="https://flexboxfroggy.com/" target="_blank">Juego: Flexbox Froggy 🐸</a></li>
+            <li><a href="https://cssgridgarden.com/" target="_blank">Juego: CSS Grid Garden 🌱</a></li>
+            <li><a href="https://linuxjourney.com/" target="_blank">Explora Linux – Linux Journey</a></li>
+          </ul>
+        </section>
+    </main>
+    
+    <footer class="footer">
+      <p>© 2025 Santiago Botero Ramirez. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
+
